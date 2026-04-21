@@ -1,6 +1,6 @@
 // aoresult.h - list of all error codes in any of the aolibs.
 /*****************************************************************************
- * Copyright 2024,2025 by ams OSRAM AG                                       *
+ * Copyright 2024-2026 by ams OSRAM AG                                       *
  * All rights are reserved.                                                  *
  *                                                                           *
  * IMPORTANT - PLEASE READ CAREFULLY BEFORE COPYING, INSTALLING OR USING     *
@@ -26,7 +26,7 @@
 
 
 // Identifies lib version
-#define AORESULT_VERSION "0.5.0"
+#define AORESULT_VERSION "0.6.0"
 
 
 // For detailed meaning, see aoresult_to_str()
@@ -64,11 +64,12 @@ typedef enum aoresult_e {
   // Errors for attached devices
   aoresult_dev_noi2cbridge , // 22
   aoresult_dev_noi2cdev    , // 23
-  aoresult_dev_i2ctimeout  , // 24
-  aoresult_dev_i2cnack     , // 25
-  aoresult_dev_i2cmode     , // 26
+  aoresult_dev_wrongval    , // 24
+  aoresult_dev_i2ctimeout  , // 25
+  aoresult_dev_i2cnack     , // 26
+  aoresult_dev_i2cmode     , // 27
   
-  aoresult_numresultcodes    // 27 keep this as last
+  aoresult_numresultcodes    // 28 keep this as last
 } aoresult_t;
 
 

@@ -1,6 +1,6 @@
 // aoresult.cpp - list of all error codes in any of the aolibs.
 /*****************************************************************************
- * Copyright 2024,2025 by ams OSRAM AG                                       *
+ * Copyright 2024-2026 by ams OSRAM AG                                       *
  * All rights are reserved.                                                  *
  *                                                                           *
  * IMPORTANT - PLEASE READ CAREFULLY BEFORE COPYING, INSTALLING OR USING     *
@@ -65,6 +65,7 @@ const char * aoresult_to_str(aoresult_t result, int verbose) {
 
     case aoresult_dev_noi2cbridge  : return verbose==0 ? "dev_noi2cbridge" : "Missing (OSP node with) I2C bridge";
     case aoresult_dev_noi2cdev     : return verbose==0 ? "dev_noi2cdev"    : "Missing specific I2C device (eg app needs EEPROM or I/O-expander)";
+    case aoresult_dev_wrongval     : return verbose==0 ? "dev_wrongval"    : "I2C device returns wrong value (eg revision or data marker)";
     case aoresult_dev_i2ctimeout   : return verbose==0 ? "dev_i2ctimeout"  : "I2C transaction took too long to complete";
     case aoresult_dev_i2cnack      : return verbose==0 ? "dev_i2cnack"     : "I2C transaction completed with NACK";
     case aoresult_dev_i2cmode      : return verbose==0 ? "dev_i2cmode"     : "I2C telegram not compatible with (8 or12 bit) mode";

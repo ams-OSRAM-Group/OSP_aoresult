@@ -59,6 +59,10 @@ Here is a quick overview:
 
 ## Version history _aoresult_
 
+- **2026 April 21, 0.6.0**
+  - Added error `aoresult_dev_wrongval` to support I2C devices with different revisions, markers or CRC.
+    Updated `aoresult_demo.ino` OUTPUT section.
+
 - **2025 September 16, 0.5.0**
   - Added error `aoresult_dev_i2cmode` and `aoresult_osp_argsize` to better support I2C in modes 8 and 12.
   - Added link to examples.

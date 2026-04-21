@@ -33,12 +33,12 @@ Since this demo does not use any OSP related hardware, any ESP32[S3] will do.
 
 OUTPUT
 Welcome to aoresult_demo.ino
-Lib version 0.4.4
+Lib version 0.5.0
   0 | ok               | Success (no error)
   1 | assert           | This should not happen (dynamically checked assert)
   7 | spi_noclock      | No clock signal detected for response telegram
- 23 | dev_i2cnack      | I2C transaction completed with NACK
- 24 | <illegal>        | Illegal error code aoresult_numresultcodes
+ 26 | dev_i2cnack      | I2C transaction completed with NACK
+ 28 | <illegal>        | Illegal error code aoresult_numresultcodes
  -1 | <unknown>        | Unknown error code for aoresult_t
 999 | <unknown>        | Unknown error code for aoresult_t
 */
